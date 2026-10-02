@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  # Microservicio de Backend: solo accesible para el Frontend
+  mi-backend:
+    build: ./backend
+    expose:
+      - "5000"
+
+  # Microservicio de Frontend: expuesto al navegador
+  mi-frontend:
+    build: ./frontend
+    ports:
+      - "8081:3000"
+    depends_on:
+      - mi-backend
