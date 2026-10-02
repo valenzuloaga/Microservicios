@@ -15,7 +15,7 @@ app.get('/', async (req, res) => {
         <b>${datos.mensaje}</b> <br> <small>Origen: ${datos.servidor}</small>
       </blockquote>
             <div style="margin-top: 20px; padding: 15px; background: #e8f4ff; border-radius: 8px; font-family: Arial;">
-        <p><b>Estudiante:</b> ${datos.estudiante}</p>
+            <p><b>Estudiantes:</b> ${datos.estudiantes}</p>
         <p><b>Fecha:</b> ${datos.fecha}</p>
       </div>
     `);

@@ -6,7 +6,7 @@ app.get('/api/datos', (req, res) => {
     res.json({
     mensaje: "¡Datos enviados con éxito desde el Microservicio de Backend!",
     servidor: "Contenedor NodeJS - API",
-    estudiante: "Valentina Zuloaga Acevedo",
+    estudiantes: "Alejandro Flórez Mesa, Juan Esteban García Morillo y Valentina Zuloaga Acevedo",
     fecha: new Date().toLocaleDateString('es-CO', { timeZone: 'America/Bogota' })
   });
 });
